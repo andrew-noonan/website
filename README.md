@@ -1,2 +1,2 @@
-# website
-Personal Website / Online Resume
+npm run dev
+npm run deploy
