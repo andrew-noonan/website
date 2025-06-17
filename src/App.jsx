@@ -170,7 +170,7 @@ function App() {
       type: "image-row",
       images: [
         {
-          src: "about\img1.jpg",
+          src: "\about\img1.jpg",
           caption: "Family"
         },
         {
@@ -178,7 +178,7 @@ function App() {
           caption: "El Cajas, Ecuador"
         },
         {
-          src: "/about/img3.jpg",
+          src: "\about\img3.jpg",
           caption:"NASA USLI"
         }
       ]
