@@ -170,15 +170,15 @@ function App() {
       type: "image-row",
       images: [
         {
-          src: "\about\img1.jpg",
+          src: "about/img1.jpg",
           caption: "Family"
         },
         {
-          src: "\about\img2.JPG",
+          src: "about/img2.JPG",
           caption: "El Cajas, Ecuador"
         },
         {
-          src: "\about\img3.jpg",
+          src: "about/img3.jpg",
           caption:"NASA USLI"
         }
       ]
