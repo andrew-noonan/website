@@ -936,7 +936,6 @@ function App() {
       categories: [
         "Instrumentation/Electrical",
         "MATLAB",
-        "Python",
         "LabVIEW",
         "Leadership",
         "Mechanical Design"
