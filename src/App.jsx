@@ -190,7 +190,7 @@ function App() {
     {
       id: 1,
       title: "Thesis: Venturi Microbubble Generation",
-      previewImage: "/projects/venturi/bubbles.gif",
+      previewImage: "projects/venturi/bubbles.gif",
       preview: "Design, manufacturing, and characterization of Venturi air injectors in viscous fluids",
       ongoing: true,
       // github: "https://github.com/nshehadeh/policy-bot",
@@ -211,11 +211,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/venturi/1 - VenturiSchematic.jpg", 
+              src: "projects/venturi/1 - VenturiSchematic.jpg", 
               caption: "Working principle of Venturi Microbubble Generators"
             },
             {
-              src: "/projects/venturi/bubbles.gif",
+              src: "projects/venturi/bubbles.gif",
               caption: "Sample Video with in-focus Bubble Detection"
             }
           ]
@@ -1043,7 +1043,7 @@ function App() {
             </div>
           </div>
           <img 
-            src="/profile/hs.png" 
+            src="profile/hs.png" 
             alt="Profile" 
             className="rounded-full w-32 h-32 border-4 border-white shadow-lg object-cover flex-shrink-0"  // Added object-cover and flex-shrink-0
             />
