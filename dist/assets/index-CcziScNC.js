@@ -90,7 +90,7 @@ Error generating stack: `+i.message+`
       I am motivated by data-driven and physics-based approaches, leveraging MATLAB, Python, and AI Image segmentation  
       to perform all of the analysis and derive new nondimensional models for bubble fragmentation.
 
-      `.trim()},{type:"paragraph",text:"Besides work, I love spending time with my friends and family, cooking/eating, traveling, running, and time outdoors.".trim()},{type:"image-row",images:[{src:"aboutimg1.jpg",caption:"Family"},{src:"aboutimg2.JPG",caption:"El Cajas, Ecuador"},{src:"aboutimg3.jpg",caption:"NASA USLI"}]}],v=[{id:1,title:"Thesis: Venturi Microbubble Generation",previewImage:"/projects/venturi/bubbles.gif",preview:"Design, manufacturing, and characterization of Venturi air injectors in viscous fluids",ongoing:!0,content:[{type:"paragraph",text:`
+      `.trim()},{type:"paragraph",text:"Besides work, I love spending time with my friends and family, cooking/eating, traveling, running, and time outdoors.".trim()},{type:"image-row",images:[{src:"about/img1.jpg",caption:"Family"},{src:"about/img2.JPG",caption:"El Cajas, Ecuador"},{src:"about/img3.jpg",caption:"NASA USLI"}]}],v=[{id:1,title:"Thesis: Venturi Microbubble Generation",previewImage:"/projects/venturi/bubbles.gif",preview:"Design, manufacturing, and characterization of Venturi air injectors in viscous fluids",ongoing:!0,content:[{type:"paragraph",text:`
             My thesis explores the generation of microbubbles using Venturi injectors within 
             viscous fluids, motivated by applications in nuclear systems, water treatment, 
             and chemical processing. The study addresses gaps in existing knowledge by 
