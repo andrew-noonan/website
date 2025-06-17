@@ -140,7 +140,7 @@ function App() {
       type: "paragraph",
       text:  `
       
-      I'm currently working as a research assistant with my BS (May 2023) and MS (June 2025) in Mechanical 
+      I'm currently working as a research assistant with my BE (May 2023) and MS (June 2025) in Mechanical 
       Engineering from Vanderbilt University. My research projects have spanned experimental fluid 
       mechanics, diesel engine lubricant measurement, structural health monitoring of composite materials, and aerospace engineering. 
       I'm extremely grateful for these incredible opportunities to build my strengths in fluid systems 
@@ -236,11 +236,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/venturi/2 - FacilityBasic.jpg",
+              src: "projects/venturi/2 - FacilityBasic.jpg",
               caption: "Experimental Facility for oil circulation, air injection, and imaging"
             },
             {
-              src: "/projects/venturi/2 - ImageSetup.png",
+              src: "projects/venturi/2 - ImageSetup.png",
               caption: "Venturi Nozzle and Imaging Setup"
             }
           ]
@@ -270,12 +270,12 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/venturi/4 - ReynoldsGroup.jpg",
+          src: "projects/venturi/4 - ReynoldsGroup.jpg",
           caption: "Normalized bubble diameter vs Reynolds number with inviscid data"
         },
         {
           type: "image",
-          src: "/projects/venturi/4 - WeberDual.jpg",
+          src: "projects/venturi/4 - WeberDual.jpg",
           caption: "Normalized bubble diameter vs Weber number with inviscid data"
         }
       ],
@@ -294,11 +294,11 @@ function App() {
       preview: "Led team of ten to 3rd place overall in NASA's University Student Launch Initiative (USLI)",
       ongoing: false,
       github: null, // Add if available
-      previewImage: "/projects/USLI/ExtendedReorientation.gif",
+      previewImage: "projects/USLI/ExtendedReorientation.gif",
       content: [
         {
           type: "image",
-          src: "/projects/USLI/MissionOverview.png",
+          src: "projects/USLI/MissionOverview.png",
           caption: "Mission overview for remote-controlled imaging system post-landing"
         },
         {
@@ -332,7 +332,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/USLI/Subsystem Overview.png",
+          src: "projects/USLI/Subsystem Overview.png",
           caption: "Overview of key subsystems for the payload mission"
         },
         {
@@ -349,7 +349,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/USLI/Manufacturing.png",
+          src: "projects/USLI/Manufacturing.png",
           caption: "CAD of the launch vehicle along with manufactured components and as-built rocket on the pad"
         },
         {
@@ -369,11 +369,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/USLI/Lift2.gif",
+              src: "projects/USLI/Lift2.gif",
               caption: "Collapsable lift mechanism for camera and primary antenna"
             },
             {
-              src: "/projects/USLI/Nacelle Demo.gif",
+              src: "projects/USLI/Nacelle Demo.gif",
               caption: "Rotating camera nacelle for 360 degree imaging"
             }
           ]
@@ -382,11 +382,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/USLI/ExtendedReorientation.gif",
+              src: "projects/USLI/ExtendedReorientation.gif",
               caption: "Testing of rotating camera bay with maximum torque (fully extended lift)"
             },
             {
-              src: "/projects/USLI/DrogueDeployment.gif",
+              src: "projects/USLI/DrogueDeployment.gif",
               caption: "Drogue parachute deployment and passive leg deployment"
             }
           ]
@@ -411,11 +411,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/USLI/LandedPayload.png",
+              src: "projects/USLI/LandedPayload.png",
               caption: "Functional payload post-landing with original CAD rendering"
             },
             {
-              src: "/projects/USLI/TeamPhoto.jpg",
+              src: "projects/USLI/TeamPhoto.jpg",
               caption: "Team photo!"
             }
           ]
@@ -436,7 +436,7 @@ function App() {
       id: 10,
       title: "Payload Detachment System",
       preview: "In-flight payload detachment system with radio and altitude control",
-      previewImage: "/projects/PDS/AutorotateDrop.gif",
+      previewImage: "projects/PDS/AutorotateDrop.gif",
       //github: "https://github.com/nshehadeh/xrog",
       ongoing: false,
       content: [
@@ -454,7 +454,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/PDS/Mission.png",
+          src: "projects/PDS/Mission.png",
           caption: "USLI 2023-2024 Mission Overview, PDS shown in step 5"
         },
         {
@@ -475,7 +475,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/PDS/RemoteActuation.gif",
+          src: "projects/PDS/RemoteActuation.gif",
           caption: "Initial lab prototyping of RF controlled latches",
           size: "small"
         },
@@ -495,7 +495,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/PDS/PDS Assembled.png",
+          src: "projects/PDS/PDS Assembled.png",
           caption: "Flight-ready PDS subsystem",
           size: "large"
         },
@@ -520,7 +520,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/PDS/Software.png",
+          src: "projects/PDS/Software.png",
           caption: "High-level software schematic",
           size: "medium"
         },
@@ -539,11 +539,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/PDS/PDS Plot.png",
+              src: "projects/PDS/PDS Plot.png",
               caption: "Competition flight logs with autonomously detected flight events and successful actuation"
             },
             {
-              src: "/projects/PDS/AutorotateDrop.gif",
+              src: "projects/PDS/AutorotateDrop.gif",
               caption: "Repurposed PDS for deployment of autorotator from drone"
             }
           ]
@@ -564,7 +564,7 @@ function App() {
       id: 3,
       title: "Active Apogee Control",
       preview: "Contrastive learning for surgical skill assessment using surgical videos and robot kinematics",
-      previewImage: "/projects/AAC/AACOnboard.gif",
+      previewImage: "projects/AAC/AACOnboard.gif",
       ongoing: false,
       github: "https://github.com/nshehadeh/contrastive-gesture-skill",
       content: [
@@ -600,7 +600,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/AAC/AAC Principle.png",
+          src: "projects/AAC/AAC Principle.png",
           caption: "Active Apogee Control working principle (middle)",
           size:"medium"
         },
@@ -621,12 +621,12 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/AAC/AAC Old.png",
+              src: "projects/AAC/AAC Old.png",
               caption: "AAC Design for retrofit on old vehicle",
               size: "small"
             },
             {
-              src: "/projects/AAC/AAC Isometric.png",
+              src: "projects/AAC/AAC Isometric.png",
             caption: "AAC Redesign for competition, 2023"
             }
           ]
@@ -648,12 +648,12 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/AAC/AAC No Pitch Effect.png",
+              src: "projects/AAC/AAC No Pitch Effect.png",
               caption: "Gyroscope data showing no adverse moments created during deployment",
               size: "small"
             },
             {
-              src: "/projects/AAC/AAC Drag Coeff.png",
+              src: "projects/AAC/AAC Drag Coeff.png",
             caption: "Accelerometer-derived drag coefficient data "
             }
           ]
@@ -670,7 +670,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/AAC/AACOnboard.gif",
+          src: "projects/AAC/AACOnboard.gif",
           caption: "On-board footage of 20-degree AAC deployment",
           size:"large"
         },
@@ -689,7 +689,7 @@ function App() {
       preview: "In-situ estimation of lubricant flow rate on Diesel engine testbed using pressure and temperature measurements",
       ongoing: true,
       //github: "https://github.com/pkrobinette/suds-ecai-2023", // Add if available
-      previewImage: "/projects/Engine/Engine.png",
+      previewImage: "projects/Engine/Engine.png",
       content: [
         {
           type: "paragraph",
@@ -712,11 +712,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/Engine/Engine.png",
+              src: "projects/Engine/Engine.png",
               caption: "Overview of the Diesel engine test facility"
             },
             {
-              src: "/projects/Engine/Intercept.png",
+              src: "projects/Engine/Intercept.png",
               caption: "Lubricant flow intercept for pre-filter pressure measurement and validation"
             }
           ]
@@ -725,11 +725,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/Engine/Schematic.png",
+              src: "projects/Engine/Schematic.png",
               caption: "Partial schematic of the lubricant flow system on the diesel engine"
             },
             {
-              src: "/projects/Engine/3b.png",
+              src: "projects/Engine/3b.png",
               caption: "Modified filter housing for pressure sensing post-filter"
             }
           ]
@@ -748,13 +748,13 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/Engine/Engine Run.png",
+          src: "projects/Engine/Engine Run.png",
           caption: "Example Engine Run showing varied load/RPM conditions at approximately constant temperature",
           size: "large"
         },
         {
           type: "image",
-          src: "/projects/Engine/P vs Q.png",
+          src: "projects/Engine/P vs Q.png",
           caption: "Pressure drop vs flow rate as measured on the benchtop facility and temperature-dependence of the relationship",
           size: "large"
         },
@@ -773,7 +773,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/Engine/Flow Rate vs RPM.png",
+          src: "projects/Engine/Flow Rate vs RPM.png",
           caption: "Pressure drop vs flow rate as measured on the benchtop facility and temperature-dependence of the relationship",
           size: "large"
         },
@@ -805,7 +805,7 @@ function App() {
       id: 7,
       title: "Structural Health Monitoring with FBG's",
       preview: "Assistant Researcher on SHM coollaboration with NASA AFRC",
-      previewImage: "/projects/SHM/Blast Test Setup.png",
+      previewImage: "projects/SHM/Blast Test Setup.png",
       ongoing: false,
       github: "https://github.com/nshehadeh/ar_presence",
       content:[
@@ -827,7 +827,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/SHM/FBG Working Principle.png",
+          src: "projects/SHM/FBG Working Principle.png",
           caption: "Schematic illustrating the working principle and interrogation of FBG sensors"
         },
         {
@@ -843,13 +843,13 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/SHM/DLF.jpg",
+          src: "projects/SHM/DLF.jpg",
           caption: "Dynamic Load Frame test facility",
           size: "small"
         },
         {
           type: "image",
-          src: "/projects/SHM/Blast Test Setup.png",
+          src: "projects/SHM/Blast Test Setup.png",
           caption: "Blast loading test facility",
           size: "large"
         },
@@ -871,7 +871,7 @@ function App() {
         },
         {
           type: "image",
-          src: "/projects/SHM/BasicFBG.png",
+          src: "projects/SHM/BasicFBG.png",
           caption: "FBG intensity-wavelength data for a moment in time. Tracking of these peaks over time yields material strain",
           size: "medium"
         },
@@ -896,11 +896,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/SHM/PeakDrop.gif",
+              src: "projects/SHM/PeakDrop.gif",
               caption: "Example of minor intensity dips which occur during loading and cause a shifting of peak labels"
             },
             {
-              src: "/projects/SHM/Aliasing.png",
+              src: "projects/SHM/Aliasing.png",
               caption: "Peaks just prior to aliasing. If one sensor is in tension (rightward shift), and one is in compression (leftward shift), they can overlap"
             }
           ]
@@ -923,11 +923,11 @@ function App() {
           type: "image-row",
           images: [
             {
-              src: "/projects/SHM/FBG_BlastLayout.png",
+              src: "projects/SHM/FBG_BlastLayout.png",
               caption: "Fiber and comparative RSG layout for blast test on carbon fiber cylinder"
             },
             {
-              src: "/projects/SHM/4gBlast.png",
+              src: "projects/SHM/4gBlast.png",
               caption: "Strain data from FBGs 1, 2, and 3 from the 4g blast test. RSG data was unusable due to high RF interference."
             }
           ]
@@ -1391,7 +1391,7 @@ function App() {
                       <h5 className="text-sm text-red-500 underline underline-red-600 pt-2" >Not up to date</h5> </div>
                         
                         <a 
-                        href="/resume/nishan-shehadeh-resume.pdf"
+                        href="resume/Andrew Noonan Resume.pdf"
                         download
                         className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                         >
@@ -1413,7 +1413,7 @@ function App() {
                     </div>
                     <div className="border rounded-lg overflow-hidden bg-gray-50">
                         <iframe
-                        src="/resume/nishan-shehadeh-resume.pdf"
+                        src="resume/Andrew Noonan Resume.pdf"
                         className="w-full h-[800px]"
                         title="Resume Preview"
                         />
