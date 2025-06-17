@@ -125,7 +125,7 @@ function App() {
 
   const categories = [
     "Fluid Systems",
-    "Computer Aided Machining",
+    "Computer-Aided Manufacturing",
     "Instrumentation/Electrical",
     "Rocketry",
     "MATLAB",
@@ -246,6 +246,11 @@ function App() {
           ]
         },
         {
+          type: "image",
+          src: "projects/venturi/2- FacilitySchematic.jpg",
+          caption: "Schematic of the experimental facility with sensing locations"
+        },
+        {
           type: "paragraph",
           text: `
             To extract quantitative data from high-speed video, data processing involved various image 
@@ -280,7 +285,7 @@ function App() {
         }
       ],
       categories: ["Fluid Systems", 
-                  "Computer Aided Machining", 
+                  "Computer-Aided Manufacturing", 
                   "Instrumentation/Electrical", 
                   "MATLAB", 
                   "Python", 
@@ -293,7 +298,7 @@ function App() {
       title: "Team President: NASA Student Launch 2023",
       preview: "Led team of ten to 3rd place overall in NASA's University Student Launch Initiative (USLI)",
       ongoing: false,
-      github: null, // Add if available
+      //github: null, // Add if available
       previewImage: "projects/USLI/ExtendedReorientation.gif",
       content: [
         {
@@ -422,7 +427,7 @@ function App() {
         },
       ],
       categories: [
-        "Computer Aided Machining",
+        "Computer-Aided Manufacturing",
         "Mechanical Design",
         "Instrumentation/Electrical",
         "Rocketry",
@@ -550,7 +555,7 @@ function App() {
         },
       ],
       categories:[
-        "Computer Aided Machining",
+        "Computer-Aided Manufacturing",
         "Instrumentation/Electrical",
         "Rocketry",
         "C/C++",
@@ -566,7 +571,7 @@ function App() {
       preview: "Contrastive learning for surgical skill assessment using surgical videos and robot kinematics",
       previewImage: "projects/AAC/AACOnboard.gif",
       ongoing: false,
-      github: "https://github.com/nshehadeh/contrastive-gesture-skill",
+      //github: "https://github.com/nshehadeh/contrastive-gesture-skill",
       content: [
         {
           type: "paragraph",
@@ -807,7 +812,7 @@ function App() {
       preview: "Assistant Researcher on SHM coollaboration with NASA AFRC",
       previewImage: "projects/SHM/Blast Test Setup.png",
       ongoing: false,
-      github: "https://github.com/nshehadeh/ar_presence",
+      //github: "https://github.com/nshehadeh/ar_presence",
       content:[
         {
           type: "paragraph",
@@ -857,28 +862,6 @@ function App() {
           type: "paragraph",
           text: `
           
-          While the primary research and thesis work were led by Thomas Colicci, I played a key supporting 
-          role throughout the project. I accompanied our team on three trips to NASA AFRC, where I received 
-          hands-on training with their FOSS systems and collaborated with NASA engineers. I focused 
-          on developing and refining the data analysis pipelines for both 5 kHz and 30 kHz systems. 
-          This involved implementing robust peak wavelength tracking algorithms in 
-          MATLAB to achieve microstrain-level resolution in challenging test environments. These methods 
-          included adaptive center-of-mass estimation and thresholding techniques that account for artifacts 
-          like intensity dropouts and peak aliasing—issues that are unique to optical sensing, particularly 
-          in high strain-rate applications.
-
-          `.trim()
-        },
-        {
-          type: "image",
-          src: "projects/SHM/BasicFBG.png",
-          caption: "FBG intensity-wavelength data for a moment in time. Tracking of these peaks over time yields material strain",
-          size: "medium"
-        },
-        {
-          type: "paragraph",
-          text: `
-          
           While the experimental and thesis work were led by Thomas Colicci, I played a key supporting 
           role throughout the project. I accompanied our team on three trips to NASA AFRC, where I collaborated 
           with NASA engineers for future flight-based design iterations and received 
@@ -891,6 +874,12 @@ function App() {
           in high strain-rate applications.
 
           `.trim()
+        },
+                {
+          type: "image",
+          src: "projects/SHM/BasicFBG.png",
+          caption: "FBG intensity-wavelength data for a moment in time. Tracking of these peaks over time yields material strain",
+          size: "medium"
         },
         {
           type: "image-row",
@@ -939,6 +928,75 @@ function App() {
         "LabVIEW",
         "Leadership",
         "Mechanical Design"
+        ]
+    },
+
+    // Teaching
+    {
+      id: 20,
+      title: "Teaching Assistant",
+      preview: "Teaching assistant for Energetics Laboratory, Finite Element Analysis, Fluid Mechanics, and Machining Lab",
+      previewImage: "projects/TA/Vanderbilt-University-Logo.jpg",
+      ongoing: false,
+      //github: "https://github.com/nshehadeh/ar_presence",
+      content:[
+        {
+          type: "paragraph",
+          text: `
+          
+          As a graduate student, I had the opportunity to serve as a Teaching Assistant for Energetics 
+          Laboratory in both Fall 2023 and Fall 2024. This senior-level capstone course serves as the 
+          hands-on lab complement to fluid mechanics, heat transfer, and thermodynamics, which are core Mechanial 
+          Engineering courses that lack dedicated labs. Across the two semesters, I led experimental 
+          and instrumentation-heavy labs covering a range of topics including vortex shedding in a water tunnel, drag measurements in a 
+          wind tunnel, convective heat transfer through pin fin arrays, SI engine performance, and liquid-liquid 
+          heat exchanger efficiency. I really enjoy engaging with students and have found that teaching is 
+          one of the most effective ways to reinforce my own understanding of engineering principles. 
+
+          `.trim()
+        },
+        {
+          type: "image-row",
+          images: [
+            {
+              src: "projects/TA/Energetics 2023F Feedback.png",
+              caption: "Anonymous course feedback for Energetics Fall 2023"
+            },
+            {
+              src: "projects/TA/Energetics 2024F Feedback.png",
+              caption: "Anonymous course feedback for Energetics Fall 2024"
+            }
+          ]
+        },
+        {
+          type: "paragraph",
+          text: `
+
+          In Spring 2024, during my second semester of grad school, I also worked as a TA for 
+          the Finite Element Analysis (FEA) course, a project-driven class centered around 
+          Ansys simulation software. I assisted students in building and 
+          troubleshooting models, and I had the opportunity to deliver several lectures. The course 
+          concluded with a design optimization challenge, where I CNC-machined and tested all 
+          student submissions to failure, getting to combine my interests in simulation, 
+          manufacturing, and experimental validation. As an undergrad, I also TA'd 
+          for fluid mechanics and twice for the undergraduate machining laboratory, which 
+          helped strengthen my conceptual understanding of fluids and my hands-on machining skills 
+          on the lathe and mill.
+
+          `.trim()
+        },
+        {
+          type: "image",
+          src: "projects/TA/FEA 2024S Feedback.png",
+          caption: "Anonymous course feedback for FEA Spring 2024",
+          size: "large"
+        }
+      ],
+      categories: [
+        "Leadership",
+        "Fluid Systems",
+        "Computer-Aided Manufacturing",
+        "Instrumentation/Electrical"
         ]
     },
   ];
