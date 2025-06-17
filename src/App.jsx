@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Mail, Linkedin, ExternalLink } from "lucide-react";
-
+const base = import.meta.env.BASE_URL;
 // Project detail component
 // Update the ProjectDetail component to handle the new content structure
 const ProjectDetail = ({ project, onBack }) => (
@@ -170,11 +170,11 @@ function App() {
       type: "image-row",
       images: [
         {
-          src: "/about/img1.jpg",
+          src: "${base}/about/img1.jpg",
           caption: "Family"
         },
         {
-          src: "/about/img2.JPG",
+          src: "about/img2.JPG",
           caption: "El Cajas, Ecuador"
         },
         {
