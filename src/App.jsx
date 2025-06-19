@@ -202,7 +202,7 @@ function App() {
             viscous fluids, motivated by applications in nuclear systems, water treatment, 
             and chemical processing. The study addresses gaps in existing knowledge by 
             systematically varying fluid viscosity and surface tension through a temperature-controlled 
-            fluid (50 cSt polydimethylsiloxane, PDMS). Both dimensional and nondimensional analysis was then used to examine the role of
+            fluid (50 cSt polydimethylsiloxane, PDMS). Both dimensional and nondimensional analysis were then used to examine the role of
              flow velocity, viscosity, surface tension, and diverging angle on bubble fragmentation.
 
           `.trim()        
@@ -228,7 +228,7 @@ function App() {
             temperature and air and liquid flow rates. Venturi microbubble generators with diverging half-angles 
             of 7°, 15°, and 30° were designed and fabricated in-house using CNC machining.
             High speed imaging was then used to capture freshly generated bubbles, while pressure and temperature
-            of the working fluid were precisely measured using a custom-built circuit and LabVIEW interface.
+            of the working fluid were precisely measured using a calibrated custom-built circuit and LabVIEW interface.
 
             `.trim()
         },
@@ -254,8 +254,8 @@ function App() {
           type: "paragraph",
           text: `
             To extract quantitative data from high-speed video, data processing involved various image 
-            analysis techniques. A traditional computer-vision approach was implemented in a custom MATLAB 
-            interface and included median image subtraction, Canny edge detection, watershed segmentation, 
+            analysis techniques. A traditional computer-vision approach was implemented in MATLAB 
+            and included median image subtraction, Canny edge detection, watershed segmentation, 
             and circular Hough transforms. A second approach was then used after
             completion of the thesis utilizing a custom implementation of Meta's SAM2 model which has been refined for 
             speed and accuracy in this particular task.
@@ -302,11 +302,6 @@ function App() {
       previewImage: "projects/USLI/ExtendedReorientation.gif",
       content: [
         {
-          type: "image",
-          src: "projects/USLI/MissionOverview.png",
-          caption: "Mission overview for remote-controlled imaging system post-landing"
-        },
-        {
           type: "paragraph",
           text: `
 
@@ -320,11 +315,16 @@ function App() {
           `.trim()
         },
         {
+          type: "image",
+          src: "projects/USLI/MissionOverview.png",
+          caption: "Mission overview for remote-controlled imaging system post-landing"
+        },
+        {
           type: "paragraph",
           text: `
 
             Our rocket featured several novel subsystems, carefully designed to reliably achieve mission goals. 
-            During ascent, the secondary payload (Active Apogee Control) delivered us to within 1m of our target 
+            During ascent, the secondary payload (Active Apogee Control) delivered us to within 4 ft of our target 
             altitude. During descent, passive legs deployed to allow the rocket to land 
             horizontally, supported  by both legs and fins. Post-landing, the parachute was detached to prevent 
             dragging, the central payload bay rotated to orient the primary camera skyward, and the novel lift 
@@ -345,10 +345,12 @@ function App() {
           text: `
           
             Subsystem integration was critical, and every member contributed and collaborated broadly 
-            to ensure reliable operation. The design of bulkheads, carbon-fiber airframes, custom PCBs, 
-            3D-printed elements, and payload scaffolding was guided by load path analysis, FEA, field testing, 
-            state machine modeling, and RF analysis. Using a combination of traditional machining, CNC machining,
-            3D printing, laser cutting, and composite layup, our team of ten manufactured every component in-house. 
+            to ensure reliable operation. The design of structural elements such as recovery bulkheads, 
+            carbon-fiber airframes, 3D printed elements, and payload scaffolding was guided by load path 
+            analysis, FEA, load frame testing, and field testing. Using a combination of traditional 
+            machining, CNC machining, 3D printing, laser cutting, and composite layup, our team of ten 
+            manufactured every component in-house. Design of custom-built software, antennas, and PCBs, 
+            was guided by state machine modeling, hardware-in-the-loop testing, and antenna tuning/frequency analysis.. 
             
           `
         },
@@ -405,7 +407,7 @@ function App() {
             , and we earned 1st place for both altitude accuracy and STEM outreach initiatives 
             conducted across the country. This experience deepened my engineering expertise, emphasizing 
             interdisciplinary collaboration, design for manufacturability, and system integration. 
-            Getting to lead and work with a team of such talented friends was an experience I am extremely grateful for,
+            Getting to work with a team of such talented friends was an experience I am extremely grateful for,
             and I could not be more excited to see how everyone's careers develop! 
             Additional details and career outcomes can be explored further on our VADL team website <a href="https://www.vadl.org/copy-of-alumni-spotlight" target="_blank">(Link)</a>
             and project presentations/reports can be provided upon request.
@@ -450,10 +452,10 @@ function App() {
           text: `
             
             During my first year of graduate school, I served as the graduate mentor for the 2023-2024 NASA 
-            USLI team. Their challenge was to safely detach and land a lander from a rocket at 400 feet without 
-            using parachutes or energetics. The team's innovative solution was to integrate an in-house-built 
-            coaxial drone into the rocket payload, which would autonomously or manually fly to safety after 
-            detachment. This required precise altitude measurement synchronization with flight events.
+            USLI team. Their challenge was to safely jettison and land a lander from a rocket at 400 feet without 
+            using parachutes or energetics. The team's solution was to design and deploy a 
+            coaxial drone which doubled as the vehicle's nose cone. The drone would autonomously or manually fly to safety after 
+            detachment as shown below.
 
             `.trim()
         },
@@ -468,7 +470,7 @@ function App() {
             
             To allow the team to focus on drone development, I was assigned responsibility for the 
             design, fabrication, and programming of the Payload Detachment System (PDS). 
-            The system was required to receive remote Range Safety Officer (RSO) approval 
+            The system was to receive remote Range Safety Officer (RSO) approval mid-flight 
             via RF communication and only proceed with detachment once the rocket descended 
             below 400 feet. I developed the system around a Teensy 4.0 microcontroller for its ease of configuration, 
             high processing speed, and low power draw. This interfaced with a TBS Crossfire 
@@ -494,7 +496,9 @@ function App() {
             In less than a month, I rapidly prototyped and tested the system, achieving reliable transmission 
             out to 0.5 miles before handing off the finalized schematic to an undergraduate EE student for PCB 
             design. After receiving the custom board, I completed the assembly via surface-mount soldering and 
-            integrated all subsystems into a fully functioning flight-ready unit, shown below.
+            integrated all subsystems into a fully functioning flight-ready unit, shown below. I also CNC machined 
+            the Rotor Deployment System (RDS) shown in the gif below, which is a set of foldable, locking hinges 
+            to mount the coaxial propellers.
             
             `.trim()
         },
@@ -505,20 +509,26 @@ function App() {
           size: "large"
         },
         {
+          type: "image",
+          src: "projects/PDS/RDS_Deployment.gif",
+          caption: "Rotor deployment system testing",
+        },
+        {
           type: "paragraph",
           text: `
             
-            The Teensy firmware was designed for autonomous decision-making and fault tolerance. 
-            Upon power-up, the system verified IMU operation, SD card status, and power rail status, 
+            The Teensy firmware was designed for autonomous decision making and fault tolerance. 
+            On power-up, the system verified IMU operation, SD card status, and power rail status, 
             communicating pass/fail results to the operator through LED indicators. It then zeroed 
-            the pressure-based altitude and entered a launch wait state. Launch detection was defined as sustained 
+            the pressure-based altitude and entered a launch wait state, saving IMU data in a temporary 
+            buffer. Launch detection was defined as sustained 
             acceleration exceeding 3.5g for more than 0.5 seconds - a rolling average was used to avoid 
-            false positives due to handling. After a motor-burn delay, the system waited for apogee 
+            false positives due normal handling of the vehicle and payload. After a motor-burn delay, the system waited for apogee 
             detection (defined as one second of no new altitude maximum) before scanning for RSO 
-            approval via RF. If approval was received and the altitude was confirmed to be below 400 feet, 
+            approval via RF. If approval was received and the altitude was confirmed to be below 400 feet above ground level, 
             the Teensy issued the detachment signal to the EM latches, released the drone, and continued logging 
             flight data until detecting landing (five seconds without a new minimum altitude). An emergency 
-            override switch on the transmitter provided an additional safeguard, allowing manual detachment 
+            override switch on the transmitter provided an additional safeguard, enforcing manual detachment 
             if onboard logic failed.
             
             `.trim()
@@ -535,7 +545,7 @@ function App() {
             
             The system was rigorously tested and performed without fail during drone test flights, 
             preliminary rocket flights, and the final USLI competition, where it detached the drone 
-            precisely at 400 feet following verified RSO approval. This successful PDS architecture has since 
+            precisely at 400 feet following verified RSO approval. The successful PDS and RDS architecture have since 
             been adapted for other payloads, including an autonomous autorotation drone I was able to
             contribute to during the summer of 2024. 
             `.trim()
@@ -549,7 +559,7 @@ function App() {
             },
             {
               src: "projects/PDS/AutorotateDrop.gif",
-              caption: "Repurposed PDS for deployment of autorotator from drone"
+              caption: "Repurposed PDS/RDS for deployment of autorotator from drone"
             }
           ]
         },
@@ -581,7 +591,7 @@ function App() {
             of my research assistantship in the Vanderbilt Aerospace Design Lab. Working alongside my peers 
             Matthew McGowan and Eric Holst, this was our first hands-on engineering project outside of 
             class. The challenge was to develop a system to improve the altitude accuracy of our 
-            USLI rocket which heavily weighted metric in the competition scoring. Since target apogee is 
+            USLI rocket which is a heavily weighted metric in competition scoring. Since target apogee is 
             selected months before flight and is based on early-stage mass predictions, teams historically missed 
             their target by an unacceptable margin due to changes in final vehicle design. Our goal 
             was to solve this by overpowering the motor and actively adjusting drag during flight, 
@@ -595,8 +605,9 @@ function App() {
           Instead of traditional deployable flat plate airbrakes, we pursued a novel and efficient approach which
           consisted of four small NACA 0012 airfoils that could independently rotate to adjust their 
           angle of attack, mounted just forward of the rocket's static fins. This design allowed for 
-          continuous control over drag force without the need for mechanically complex or large deployment mechanisms. 
-          Because the airfoils were located aft of the center of gravity but smaller than the primary fins, any detabilizing
+          continuous control over drag force without the need for mechanically complex or large deployment mechanisms, as 
+          the airfoils are always external to the vehicle. 
+          Because the airfoils were located aft of the center of gravity but are smaller than the primary fins, any detabilizing
           moments would be promptly corrected. Independent actuation was essential to minimize unintended 
           roll or pitch moments while modulating drag. A schematic of these aerodynamic principles is 
           shown in the figure below, and the airfoils were deployed in the drag configuration.
@@ -612,11 +623,11 @@ function App() {
         {
           type: "paragraph",
           text: `
-          My primary contributions included prototyping of servo mounts, retrofitting the system into an older 
-          launch vehicle for test flights, and writing the Raspberry Pi software (C++) that handled IMU input, 
+          My primary contributions included ensuring reliable altitude data collection for control, safely retrofitting the system into an older 
+          launch vehicle for test flights, and writing the embedded software (C++) that handled IMU input, 
           flight event detection, and airfoil deployment logic. Matthew developed a detailed simulation 
-          architecture to fine-tuned the actuator deployment height(s) and meticulously iterated the electrical 
-          design. Eric refined the mechanical design of airfoils and mounting hardware and performed 
+          architecture to fine-tune the actuator deployment height and did most of the electrical 
+          design. Eric meticulously refined the design of the airfoils and mounting hardware and performed 
           aerodynamic simulation to feed into flight models. As a team, we ensured that the system was 
           safe, responsive, and easily testable in both lab and flight environments.
 
@@ -632,7 +643,7 @@ function App() {
             },
             {
               src: "projects/AAC/AAC Isometric.png",
-            caption: "AAC Redesign for competition, 2023"
+            caption: "Final AAC Redesign for competition, 2023"
             }
           ]
         },
@@ -704,7 +715,7 @@ function App() {
           friction, dissipating heat, and protecting engine components across a wide range of conditions. 
           Given their importance, these systems are often overdesigned to guarantee robustness, resulting in 
           efficiency losses that conflict with modern fuel economy and emissions standards. Accurate 
-          modeling of engine lubrication flow is essential for improving system efficiency and is an active 
+          modeling of engine lubricant flow is essential for improving system efficiency and is an active 
           subject of research, but it remains difficult due to limited access to in-engine flow data 
           and the complexities introduced by variable oil viscosity, geometry, relief valves, and 
           temperature gradients. My project addresses this key gap by developing a practical method to 
@@ -768,7 +779,7 @@ function App() {
           text: `
           
           The estimated values showed excellent agreement with prior image velocimetry results on 
-          the same testbed <a href="https://irbe.library.vanderbilt.edu/server/api/core/bitstreams/6b79d8ef-deb6-4547-9019-13e12a269483/content" target="_blank">(Schepner et al.)</a>, 
+          the same testbed <a href="https://www.sae.org/publications/technical-papers/content/04-17-02-0007/" target="_blank">(Schepner et al.)</a>, 
           validating the approach. The flow rate is largely temperature-independent for a given RPM, consistent
           with the gear pump operating principle, though the actuation of internal relief valves will be temperature 
           dependent due to increased system pressure. No internal relief valves were actuated at conditions of the 
@@ -788,7 +799,7 @@ function App() {
           
           This methodology offers a powerful alternative to traditional flow 
           measurement techniques, which often require significant modification to the engine block or 
-          equipment that is impractical for real application. By using existing filter hardware and 
+          equipment that is impractical for real applications. By using existing filter hardware and 
           accessible sensing points, it provides a minimally invasive approach to flow monitoring in operational engines. 
           This is particularly useful for validating lubrication models and identifying opportunities for 
           pump or system redesign aimed at improving overall engine efficiency. This work is ongoing, and we are
@@ -821,7 +832,7 @@ function App() {
           As a graduate research assistant, I supported an ongoing research initiative focused on developing 
           structural health monitoring criteria for composite materials in reusable launch vehicles using 
           Fiber Bragg Gratings (FBGs). The operating principle of FBGs is shown in the figure below, relying 
-          on a characteristic Bragg Wavelength which results when periodic gratings of a different refractive index 
+          on a reflected Bragg Wavelength which results when periodic gratings of a different refractive index 
           are written into an optical fiber. The period of these gratings changes under both tensile and compressive strain,
           shifting the wavelength and allowing for precise strain measurement. FBGs differ from traditional resistive strain gages (RSGs) in several 
           key ways. They allow for multipoint sensing / multiplexing along a single fiber (enabling high spatial resolution), 
@@ -863,11 +874,11 @@ function App() {
           text: `
           
           While the experimental and thesis work were led by Thomas Colicci, I played a key supporting 
-          role throughout the project. I accompanied our team on three trips to NASA AFRC, where I collaborated 
-          with NASA engineers for future flight-based design iterations and received 
-          hands-on training with their layup process and FBG interrogation systems. I focused 
+          role throughout the project. I accompanies Tom on two trips to NASA AFRC, where I collaborated 
+          with NASA engineers for future flight-based designs and received 
+          hands-on training with their fiber layup process and FBG interrogation systems. I focused 
           on developing and refining the data analysis pipeline, particularly for dynamic strain 
-          measurements. This involved implementing robust peak wavelength tracking algorithms in 
+          measurements. This involved implementing peak wavelength tracking algorithms in 
           MATLAB to achieve microstrain-level resolution in challenging test environments. These methods 
           included adaptive center-of-mass estimation and thresholding techniques that account for artifacts 
           like intensity dropouts and peak aliasing—issues that are unique to optical sensing, particularly 
@@ -875,7 +886,7 @@ function App() {
 
           `.trim()
         },
-                {
+        {
           type: "image",
           src: "projects/SHM/BasicFBG.png",
           caption: "FBG intensity-wavelength data for a moment in time. Tracking of these peaks over time yields material strain",
@@ -901,11 +912,9 @@ function App() {
           The FBGs performed exceptionally well under dynamic and blast loading, even in conditions 
           where partial fiber damage occurred, a scenario in which traditional RSGs would have 
           completely failed. Our comparative studies confirmed that FBGs could reliably track dynamic 
-          strain with high fidelity and repeatability. As Thomas concluded his work and graduated, I helped 
-          facilitate the handoff of responsibilities to Jonathan Zak, the new lead graduate researcher. 
-          I supported Jonathan during an additional trip to NASA AFRC, where we acquired a new 
-          30 kHz FBG interrogator to expand the scope of our dynamic testing and prepare for flight testing.
-
+          strain with high fidelity and repeatability. This work was submitted and presented at a regional AIAA 
+          student conference in 2024 in the graduate student category, where we won 1st place (Link).
+          
           `.trim()
         },
         {
@@ -919,7 +928,25 @@ function App() {
               src: "projects/SHM/4gBlast.png",
               caption: "Strain data from FBGs 1, 2, and 3 from the 4g blast test. RSG data was unusable due to high RF interference."
             }
+            
           ]
+        },
+        {
+          type: "image",
+          src: "projects/SHM/Award.jpg",
+          caption: "Award Ceremody 2024 AIAA Student Conference Region II",
+          size: "medium"
+        },
+        {
+          type: "paragraph",
+          text: `
+          
+          As Thomas concluded his work and graduated, I helped 
+          facilitate the handoff of responsibilities to Jonathan Zak, the new lead graduate researcher. 
+          I supported Jonathan during an additional trip to NASA AFRC, where we acquired a new 
+          30 kHz FBG interrogator to expand the scope of our dynamic testing and prepare for flight testing.
+
+          `.trim()
         },
       ],
       categories: [
@@ -946,10 +973,10 @@ function App() {
           
           As a graduate student, I had the opportunity to serve as a Teaching Assistant for Energetics 
           Laboratory in both Fall 2023 and Fall 2024. This senior-level capstone course serves as the 
-          hands-on lab complement to fluid mechanics, heat transfer, and thermodynamics, which are core Mechanial 
-          Engineering courses that lack dedicated labs. Across the two semesters, I led experimental 
-          and instrumentation-heavy labs covering a range of topics including vortex shedding in a water tunnel, drag measurements in a 
-          wind tunnel, convective heat transfer through pin fin arrays, SI engine performance, and liquid-liquid 
+          hands-on lab complement to fluid mechanics, heat transfer, and thermodynamics, core Mechanial 
+          Engineering courses which lack dedicated labs. Across the two semesters, I led experimental 
+          labs covering a range of topics including vortex shedding in a water tunnel, drag measurements in a 
+          wind tunnel, convective heat transfer through pin fin arrays, SI engine performance evaluation, and liquid-liquid 
           heat exchanger efficiency. I really enjoy engaging with students and have found that teaching is 
           one of the most effective ways to reinforce my own understanding of engineering principles. 
 
@@ -1484,7 +1511,7 @@ function App() {
                     <CardContent className="pt-6">
                     <div className="flex justify-between items-center mb-6">
                       <div><h2 className="text-2xl font-semibold">Thesis</h2>
-                      <h5 className="text-sm text-red-500 underline underline-red-600 pt-2" >Not final yet</h5> </div>
+                      <h5 className="text-sm text-red-500 underline underline-red-600 pt-2" >Not finalized</h5> </div>
                         
                         <a 
                         href="projects\venturi\Noonan Masters Thesis Draft 6_5_25.pdf"

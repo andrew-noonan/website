@@ -1,6 +1,6 @@
 # Welcome to my site!
 
-[andrew-noonan.github.io/website](andrew-noonan.github.io/website)
+[Take me there!](https://andrew-noonan.github.io/website)
 
 ## Template usage
 Website template taken (with permission) from my friend Nishan Shehadeh 
