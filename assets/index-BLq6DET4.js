@@ -95,7 +95,7 @@ Error generating stack: `+i.message+`
             viscous fluids, motivated by applications in nuclear systems, water treatment, 
             and chemical processing. The study addresses gaps in existing knowledge by 
             systematically varying fluid viscosity and surface tension through a temperature-controlled 
-            fluid (50 cSt polydimethylsiloxane, PDMS). Both dimensional and nondimensional analysis was then used to examine the role of
+            fluid (50 cSt polydimethylsiloxane, PDMS). Both dimensional and nondimensional analysis were then used to examine the role of
              flow velocity, viscosity, surface tension, and diverging angle on bubble fragmentation.
 
           `.trim()},{type:"image-row",images:[{src:"projects/venturi/1 - VenturiSchematic.jpg",caption:"Working principle of Venturi Microbubble Generators"},{src:"projects/venturi/bubbles.gif",caption:"Sample Video with in-focus Bubble Detection"}]},{type:"paragraph",text:`
@@ -104,12 +104,12 @@ Error generating stack: `+i.message+`
             temperature and air and liquid flow rates. Venturi microbubble generators with diverging half-angles 
             of 7°, 15°, and 30° were designed and fabricated in-house using CNC machining.
             High speed imaging was then used to capture freshly generated bubbles, while pressure and temperature
-            of the working fluid were precisely measured using a custom-built circuit and LabVIEW interface.
+            of the working fluid were precisely measured using a calibrated custom-built circuit and LabVIEW interface.
 
             `.trim()},{type:"image-row",images:[{src:"projects/venturi/2 - FacilityBasic.jpg",caption:"Experimental Facility for oil circulation, air injection, and imaging"},{src:"projects/venturi/2 - ImageSetup.png",caption:"Venturi Nozzle and Imaging Setup"}]},{type:"image",src:"projects/venturi/2- FacilitySchematic.jpg",caption:"Schematic of the experimental facility with sensing locations"},{type:"paragraph",text:`
             To extract quantitative data from high-speed video, data processing involved various image 
-            analysis techniques. A traditional computer-vision approach was implemented in a custom MATLAB 
-            interface and included median image subtraction, Canny edge detection, watershed segmentation, 
+            analysis techniques. A traditional computer-vision approach was implemented in MATLAB 
+            and included median image subtraction, Canny edge detection, watershed segmentation, 
             and circular Hough transforms. A second approach was then used after
             completion of the thesis utilizing a custom implementation of Meta's SAM2 model which has been refined for 
             speed and accuracy in this particular task.
@@ -121,7 +121,7 @@ Error generating stack: `+i.message+`
             to surface tension energy of the dispersed bubbles. Ongoing work is focused on extending this model to a 
             lower viscosity fluids and creating a more universal trend. Additional information can be found in my thesis,
             linked at the top of this page for download.
-            `.trim()},{type:"image",src:"projects/venturi/4 - ReynoldsGroup.jpg",caption:"Normalized bubble diameter vs Reynolds number with inviscid data"},{type:"image",src:"projects/venturi/4 - WeberDual.jpg",caption:"Normalized bubble diameter vs Weber number with inviscid data"}],categories:["Fluid Systems","Computer-Aided Manufacturing","Instrumentation/Electrical","MATLAB","Python","LabVIEW"]},{id:9,title:"Team President: NASA Student Launch 2023",preview:"Led team of ten to 3rd place overall in NASA's University Student Launch Initiative (USLI)",ongoing:!1,previewImage:"projects/USLI/ExtendedReorientation.gif",content:[{type:"image",src:"projects/USLI/MissionOverview.png",caption:"Mission overview for remote-controlled imaging system post-landing"},{type:"paragraph",text:`
+            `.trim()},{type:"image",src:"projects/venturi/4 - ReynoldsGroup.jpg",caption:"Normalized bubble diameter vs Reynolds number with inviscid data"},{type:"image",src:"projects/venturi/4 - WeberDual.jpg",caption:"Normalized bubble diameter vs Weber number with inviscid data"}],categories:["Fluid Systems","Computer-Aided Manufacturing","Instrumentation/Electrical","MATLAB","Python","LabVIEW"]},{id:9,title:"Team President: NASA Student Launch 2023",preview:"Led team of ten to 3rd place overall in NASA's University Student Launch Initiative (USLI)",ongoing:!1,previewImage:"projects/USLI/ExtendedReorientation.gif",content:[{type:"paragraph",text:`
 
           As team president and project manager of our NASA Student Launch Initiative (USLI) team, 
           I led a group of ten junior and senior engineering students (seven 
@@ -130,10 +130,10 @@ Error generating stack: `+i.message+`
           receiving RF commands transmitted by NASA to remotely control a camera system 
           that can image a full 360 degrees post-landing.
 
-          `.trim()},{type:"paragraph",text:`
+          `.trim()},{type:"image",src:"projects/USLI/MissionOverview.png",caption:"Mission overview for remote-controlled imaging system post-landing"},{type:"paragraph",text:`
 
             Our rocket featured several novel subsystems, carefully designed to reliably achieve mission goals. 
-            During ascent, the secondary payload (Active Apogee Control) delivered us to within 1m of our target 
+            During ascent, the secondary payload (Active Apogee Control) delivered us to within 4 ft of our target 
             altitude. During descent, passive legs deployed to allow the rocket to land 
             horizontally, supported  by both legs and fins. Post-landing, the parachute was detached to prevent 
             dragging, the central payload bay rotated to orient the primary camera skyward, and the novel lift 
@@ -145,10 +145,12 @@ Error generating stack: `+i.message+`
            `.trim()},{type:"image",src:"projects/USLI/Subsystem Overview.png",caption:"Overview of key subsystems for the payload mission"},{type:"paragraph",text:`
           
             Subsystem integration was critical, and every member contributed and collaborated broadly 
-            to ensure reliable operation. The design of bulkheads, carbon-fiber airframes, custom PCBs, 
-            3D-printed elements, and payload scaffolding was guided by load path analysis, FEA, field testing, 
-            state machine modeling, and RF analysis. Using a combination of traditional machining, CNC machining,
-            3D printing, laser cutting, and composite layup, our team of ten manufactured every component in-house. 
+            to ensure reliable operation. The design of structural elements such as recovery bulkheads, 
+            carbon-fiber airframes, 3D printed elements, and payload scaffolding was guided by load path 
+            analysis, FEA, load frame testing, and field testing. Using a combination of traditional 
+            machining, CNC machining, 3D printing, laser cutting, and composite layup, our team of ten 
+            manufactured every component in-house. Design of custom-built software, antennas, and PCBs, 
+            was guided by state machine modeling, hardware-in-the-loop testing, and antenna tuning/frequency analysis.. 
             
           `},{type:"image",src:"projects/USLI/Manufacturing.png",caption:"CAD of the launch vehicle along with manufactured components and as-built rocket on the pad"},{type:"paragraph",text:`
           
@@ -166,7 +168,7 @@ Error generating stack: `+i.message+`
             , and we earned 1st place for both altitude accuracy and STEM outreach initiatives 
             conducted across the country. This experience deepened my engineering expertise, emphasizing 
             interdisciplinary collaboration, design for manufacturability, and system integration. 
-            Getting to lead and work with a team of such talented friends was an experience I am extremely grateful for,
+            Getting to work with a team of such talented friends was an experience I am extremely grateful for,
             and I could not be more excited to see how everyone's careers develop! 
             Additional details and career outcomes can be explored further on our VADL team website <a href="https://www.vadl.org/copy-of-alumni-spotlight" target="_blank">(Link)</a>
             and project presentations/reports can be provided upon request.
@@ -174,16 +176,16 @@ Error generating stack: `+i.message+`
           `},{type:"image-row",images:[{src:"projects/USLI/LandedPayload.png",caption:"Functional payload post-landing with original CAD rendering"},{src:"projects/USLI/TeamPhoto.jpg",caption:"Team photo!"}]}],categories:["Computer-Aided Manufacturing","Mechanical Design","Instrumentation/Electrical","Rocketry","Leadership","C/C++"]},{id:10,title:"Payload Detachment System",preview:"In-flight payload detachment system with radio and altitude control",previewImage:"projects/PDS/AutorotateDrop.gif",ongoing:!1,content:[{type:"paragraph",text:`
             
             During my first year of graduate school, I served as the graduate mentor for the 2023-2024 NASA 
-            USLI team. Their challenge was to safely detach and land a lander from a rocket at 400 feet without 
-            using parachutes or energetics. The team's innovative solution was to integrate an in-house-built 
-            coaxial drone into the rocket payload, which would autonomously or manually fly to safety after 
-            detachment. This required precise altitude measurement synchronization with flight events.
+            USLI team. Their challenge was to safely jettison and land a lander from a rocket at 400 feet without 
+            using parachutes or energetics. The team's solution was to design and deploy a 
+            coaxial drone which doubled as the vehicle's nose cone. The drone would autonomously or manually fly to safety after 
+            detachment as shown below.
 
             `.trim()},{type:"image",src:"projects/PDS/Mission.png",caption:"USLI 2023-2024 Mission Overview, PDS shown in step 5"},{type:"paragraph",text:`
             
             To allow the team to focus on drone development, I was assigned responsibility for the 
             design, fabrication, and programming of the Payload Detachment System (PDS). 
-            The system was required to receive remote Range Safety Officer (RSO) approval 
+            The system was to receive remote Range Safety Officer (RSO) approval mid-flight 
             via RF communication and only proceed with detachment once the rocket descended 
             below 400 feet. I developed the system around a Teensy 4.0 microcontroller for its ease of configuration, 
             high processing speed, and low power draw. This interfaced with a TBS Crossfire 
@@ -199,37 +201,40 @@ Error generating stack: `+i.message+`
             In less than a month, I rapidly prototyped and tested the system, achieving reliable transmission 
             out to 0.5 miles before handing off the finalized schematic to an undergraduate EE student for PCB 
             design. After receiving the custom board, I completed the assembly via surface-mount soldering and 
-            integrated all subsystems into a fully functioning flight-ready unit, shown below.
+            integrated all subsystems into a fully functioning flight-ready unit, shown below. I also CNC machined 
+            the Rotor Deployment System (RDS) shown in the gif below, which is a set of foldable, locking hinges 
+            to mount the coaxial propellers.
             
-            `.trim()},{type:"image",src:"projects/PDS/PDS Assembled.png",caption:"Flight-ready PDS subsystem",size:"large"},{type:"paragraph",text:`
+            `.trim()},{type:"image",src:"projects/PDS/PDS Assembled.png",caption:"Flight-ready PDS subsystem",size:"large"},{type:"image",src:"projects/PDS/RDS_Deployment.gif",caption:"Rotor deployment system testing"},{type:"paragraph",text:`
             
-            The Teensy firmware was designed for autonomous decision-making and fault tolerance. 
-            Upon power-up, the system verified IMU operation, SD card status, and power rail status, 
+            The Teensy firmware was designed for autonomous decision making and fault tolerance. 
+            On power-up, the system verified IMU operation, SD card status, and power rail status, 
             communicating pass/fail results to the operator through LED indicators. It then zeroed 
-            the pressure-based altitude and entered a launch wait state. Launch detection was defined as sustained 
+            the pressure-based altitude and entered a launch wait state, saving IMU data in a temporary 
+            buffer. Launch detection was defined as sustained 
             acceleration exceeding 3.5g for more than 0.5 seconds - a rolling average was used to avoid 
-            false positives due to handling. After a motor-burn delay, the system waited for apogee 
+            false positives due normal handling of the vehicle and payload. After a motor-burn delay, the system waited for apogee 
             detection (defined as one second of no new altitude maximum) before scanning for RSO 
-            approval via RF. If approval was received and the altitude was confirmed to be below 400 feet, 
+            approval via RF. If approval was received and the altitude was confirmed to be below 400 feet above ground level, 
             the Teensy issued the detachment signal to the EM latches, released the drone, and continued logging 
             flight data until detecting landing (five seconds without a new minimum altitude). An emergency 
-            override switch on the transmitter provided an additional safeguard, allowing manual detachment 
+            override switch on the transmitter provided an additional safeguard, enforcing manual detachment 
             if onboard logic failed.
             
             `.trim()},{type:"image",src:"projects/PDS/Software.png",caption:"High-level software schematic",size:"medium"},{type:"paragraph",text:`
             
             The system was rigorously tested and performed without fail during drone test flights, 
             preliminary rocket flights, and the final USLI competition, where it detached the drone 
-            precisely at 400 feet following verified RSO approval. This successful PDS architecture has since 
+            precisely at 400 feet following verified RSO approval. The successful PDS and RDS architecture have since 
             been adapted for other payloads, including an autonomous autorotation drone I was able to
             contribute to during the summer of 2024. 
-            `.trim()},{type:"image-row",images:[{src:"projects/PDS/PDS Plot.png",caption:"Competition flight logs with autonomously detected flight events and successful actuation"},{src:"projects/PDS/AutorotateDrop.gif",caption:"Repurposed PDS for deployment of autorotator from drone"}]}],categories:["Computer-Aided Manufacturing","Instrumentation/Electrical","Rocketry","C/C++","Leadership","Mechanical Design"]},{id:3,title:"Active Apogee Control",preview:"Contrastive learning for surgical skill assessment using surgical videos and robot kinematics",previewImage:"projects/AAC/AACOnboard.gif",ongoing:!1,content:[{type:"paragraph",text:`
+            `.trim()},{type:"image-row",images:[{src:"projects/PDS/PDS Plot.png",caption:"Competition flight logs with autonomously detected flight events and successful actuation"},{src:"projects/PDS/AutorotateDrop.gif",caption:"Repurposed PDS/RDS for deployment of autorotator from drone"}]}],categories:["Computer-Aided Manufacturing","Instrumentation/Electrical","Rocketry","C/C++","Leadership","Mechanical Design"]},{id:3,title:"Active Apogee Control",preview:"Contrastive learning for surgical skill assessment using surgical videos and robot kinematics",previewImage:"projects/AAC/AACOnboard.gif",ongoing:!1,content:[{type:"paragraph",text:`
             
             In the summer of 2022 (before senior year), I co-led a project titled Active Apogee Control as part 
             of my research assistantship in the Vanderbilt Aerospace Design Lab. Working alongside my peers 
             Matthew McGowan and Eric Holst, this was our first hands-on engineering project outside of 
             class. The challenge was to develop a system to improve the altitude accuracy of our 
-            USLI rocket which heavily weighted metric in the competition scoring. Since target apogee is 
+            USLI rocket which is a heavily weighted metric in competition scoring. Since target apogee is 
             selected months before flight and is based on early-stage mass predictions, teams historically missed 
             their target by an unacceptable margin due to changes in final vehicle design. Our goal 
             was to solve this by overpowering the motor and actively adjusting drag during flight, 
@@ -239,22 +244,23 @@ Error generating stack: `+i.message+`
           Instead of traditional deployable flat plate airbrakes, we pursued a novel and efficient approach which
           consisted of four small NACA 0012 airfoils that could independently rotate to adjust their 
           angle of attack, mounted just forward of the rocket's static fins. This design allowed for 
-          continuous control over drag force without the need for mechanically complex or large deployment mechanisms. 
-          Because the airfoils were located aft of the center of gravity but smaller than the primary fins, any detabilizing
+          continuous control over drag force without the need for mechanically complex or large deployment mechanisms, as 
+          the airfoils are always external to the vehicle. 
+          Because the airfoils were located aft of the center of gravity but are smaller than the primary fins, any detabilizing
           moments would be promptly corrected. Independent actuation was essential to minimize unintended 
           roll or pitch moments while modulating drag. A schematic of these aerodynamic principles is 
           shown in the figure below, and the airfoils were deployed in the drag configuration.
 
           `.trim()},{type:"image",src:"projects/AAC/AAC Principle.png",caption:"Active Apogee Control working principle (middle)",size:"medium"},{type:"paragraph",text:`
-          My primary contributions included prototyping of servo mounts, retrofitting the system into an older 
-          launch vehicle for test flights, and writing the Raspberry Pi software (C++) that handled IMU input, 
+          My primary contributions included ensuring reliable altitude data collection for control, safely retrofitting the system into an older 
+          launch vehicle for test flights, and writing the embedded software (C++) that handled IMU input, 
           flight event detection, and airfoil deployment logic. Matthew developed a detailed simulation 
-          architecture to fine-tuned the actuator deployment height(s) and meticulously iterated the electrical 
-          design. Eric refined the mechanical design of airfoils and mounting hardware and performed 
+          architecture to fine-tune the actuator deployment height and did most of the electrical 
+          design. Eric meticulously refined the design of the airfoils and mounting hardware and performed 
           aerodynamic simulation to feed into flight models. As a team, we ensured that the system was 
           safe, responsive, and easily testable in both lab and flight environments.
 
-          `.trim()},{type:"image-row",images:[{src:"projects/AAC/AAC Old.png",caption:"AAC Design for retrofit on old vehicle",size:"small"},{src:"projects/AAC/AAC Isometric.png",caption:"AAC Redesign for competition, 2023"}]},{type:"paragraph",text:`
+          `.trim()},{type:"image-row",images:[{src:"projects/AAC/AAC Old.png",caption:"AAC Design for retrofit on old vehicle",size:"small"},{src:"projects/AAC/AAC Isometric.png",caption:"Final AAC Redesign for competition, 2023"}]},{type:"paragraph",text:`
 
           The inaugural flight test in August 2022 confirmed successful deployment, captured through on-board 
           video footage. However, a late-stage change led to flight data being lost, preventing thorough 
@@ -275,7 +281,7 @@ Error generating stack: `+i.message+`
           friction, dissipating heat, and protecting engine components across a wide range of conditions. 
           Given their importance, these systems are often overdesigned to guarantee robustness, resulting in 
           efficiency losses that conflict with modern fuel economy and emissions standards. Accurate 
-          modeling of engine lubrication flow is essential for improving system efficiency and is an active 
+          modeling of engine lubricant flow is essential for improving system efficiency and is an active 
           subject of research, but it remains difficult due to limited access to in-engine flow data 
           and the complexities introduced by variable oil viscosity, geometry, relief valves, and 
           temperature gradients. My project addresses this key gap by developing a practical method to 
@@ -293,7 +299,7 @@ Error generating stack: `+i.message+`
             `.trim()},{type:"image",src:"projects/Engine/Engine Run.png",caption:"Example Engine Run showing varied load/RPM conditions at approximately constant temperature",size:"large"},{type:"image",src:"projects/Engine/P vs Q.png",caption:"Pressure drop vs flow rate as measured on the benchtop facility and temperature-dependence of the relationship",size:"large"},{type:"paragraph",text:`
           
           The estimated values showed excellent agreement with prior image velocimetry results on 
-          the same testbed <a href="https://irbe.library.vanderbilt.edu/server/api/core/bitstreams/6b79d8ef-deb6-4547-9019-13e12a269483/content" target="_blank">(Schepner et al.)</a>, 
+          the same testbed <a href="https://www.sae.org/publications/technical-papers/content/04-17-02-0007/" target="_blank">(Schepner et al.)</a>, 
           validating the approach. The flow rate is largely temperature-independent for a given RPM, consistent
           with the gear pump operating principle, though the actuation of internal relief valves will be temperature 
           dependent due to increased system pressure. No internal relief valves were actuated at conditions of the 
@@ -303,7 +309,7 @@ Error generating stack: `+i.message+`
           
           This methodology offers a powerful alternative to traditional flow 
           measurement techniques, which often require significant modification to the engine block or 
-          equipment that is impractical for real application. By using existing filter hardware and 
+          equipment that is impractical for real applications. By using existing filter hardware and 
           accessible sensing points, it provides a minimally invasive approach to flow monitoring in operational engines. 
           This is particularly useful for validating lubrication models and identifying opportunities for 
           pump or system redesign aimed at improving overall engine efficiency. This work is ongoing, and we are
@@ -314,7 +320,7 @@ Error generating stack: `+i.message+`
           As a graduate research assistant, I supported an ongoing research initiative focused on developing 
           structural health monitoring criteria for composite materials in reusable launch vehicles using 
           Fiber Bragg Gratings (FBGs). The operating principle of FBGs is shown in the figure below, relying 
-          on a characteristic Bragg Wavelength which results when periodic gratings of a different refractive index 
+          on a reflected Bragg Wavelength which results when periodic gratings of a different refractive index 
           are written into an optical fiber. The period of these gratings changes under both tensile and compressive strain,
           shifting the wavelength and allowing for precise strain measurement. FBGs differ from traditional resistive strain gages (RSGs) in several 
           key ways. They allow for multipoint sensing / multiplexing along a single fiber (enabling high spatial resolution), 
@@ -331,11 +337,11 @@ Error generating stack: `+i.message+`
           `.trim()},{type:"image",src:"projects/SHM/DLF.jpg",caption:"Dynamic Load Frame test facility",size:"small"},{type:"image",src:"projects/SHM/Blast Test Setup.png",caption:"Blast loading test facility",size:"large"},{type:"paragraph",text:`
           
           While the experimental and thesis work were led by Thomas Colicci, I played a key supporting 
-          role throughout the project. I accompanied our team on three trips to NASA AFRC, where I collaborated 
-          with NASA engineers for future flight-based design iterations and received 
-          hands-on training with their layup process and FBG interrogation systems. I focused 
+          role throughout the project. I accompanies Tom on two trips to NASA AFRC, where I collaborated 
+          with NASA engineers for future flight-based designs and received 
+          hands-on training with their fiber layup process and FBG interrogation systems. I focused 
           on developing and refining the data analysis pipeline, particularly for dynamic strain 
-          measurements. This involved implementing robust peak wavelength tracking algorithms in 
+          measurements. This involved implementing peak wavelength tracking algorithms in 
           MATLAB to achieve microstrain-level resolution in challenging test environments. These methods 
           included adaptive center-of-mass estimation and thresholding techniques that account for artifacts 
           like intensity dropouts and peak aliasing—issues that are unique to optical sensing, particularly 
@@ -346,19 +352,24 @@ Error generating stack: `+i.message+`
           The FBGs performed exceptionally well under dynamic and blast loading, even in conditions 
           where partial fiber damage occurred, a scenario in which traditional RSGs would have 
           completely failed. Our comparative studies confirmed that FBGs could reliably track dynamic 
-          strain with high fidelity and repeatability. As Thomas concluded his work and graduated, I helped 
+          strain with high fidelity and repeatability. This work was submitted and presented at a regional AIAA 
+          student conference in 2024 in the graduate student category, where we won 1st place (Link).
+          
+          `.trim()},{type:"image-row",images:[{src:"projects/SHM/FBG_BlastLayout.png",caption:"Fiber and comparative RSG layout for blast test on carbon fiber cylinder"},{src:"projects/SHM/4gBlast.png",caption:"Strain data from FBGs 1, 2, and 3 from the 4g blast test. RSG data was unusable due to high RF interference."}]},{type:"image",src:"projects/SHM/Award.jpg",caption:"Award Ceremody 2024 AIAA Student Conference Region II",size:"medium"},{type:"paragraph",text:`
+          
+          As Thomas concluded his work and graduated, I helped 
           facilitate the handoff of responsibilities to Jonathan Zak, the new lead graduate researcher. 
           I supported Jonathan during an additional trip to NASA AFRC, where we acquired a new 
           30 kHz FBG interrogator to expand the scope of our dynamic testing and prepare for flight testing.
 
-          `.trim()},{type:"image-row",images:[{src:"projects/SHM/FBG_BlastLayout.png",caption:"Fiber and comparative RSG layout for blast test on carbon fiber cylinder"},{src:"projects/SHM/4gBlast.png",caption:"Strain data from FBGs 1, 2, and 3 from the 4g blast test. RSG data was unusable due to high RF interference."}]}],categories:["Instrumentation/Electrical","MATLAB","LabVIEW","Leadership","Mechanical Design"]},{id:20,title:"Teaching Assistant",preview:"Teaching assistant for Energetics Laboratory, Finite Element Analysis, Fluid Mechanics, and Machining Lab",previewImage:"projects/TA/Vanderbilt-University-Logo.jpg",ongoing:!1,content:[{type:"paragraph",text:`
+          `.trim()}],categories:["Instrumentation/Electrical","MATLAB","LabVIEW","Leadership","Mechanical Design"]},{id:20,title:"Teaching Assistant",preview:"Teaching assistant for Energetics Laboratory, Finite Element Analysis, Fluid Mechanics, and Machining Lab",previewImage:"projects/TA/Vanderbilt-University-Logo.jpg",ongoing:!1,content:[{type:"paragraph",text:`
           
           As a graduate student, I had the opportunity to serve as a Teaching Assistant for Energetics 
           Laboratory in both Fall 2023 and Fall 2024. This senior-level capstone course serves as the 
-          hands-on lab complement to fluid mechanics, heat transfer, and thermodynamics, which are core Mechanial 
-          Engineering courses that lack dedicated labs. Across the two semesters, I led experimental 
-          and instrumentation-heavy labs covering a range of topics including vortex shedding in a water tunnel, drag measurements in a 
-          wind tunnel, convective heat transfer through pin fin arrays, SI engine performance, and liquid-liquid 
+          hands-on lab complement to fluid mechanics, heat transfer, and thermodynamics, core Mechanial 
+          Engineering courses which lack dedicated labs. Across the two semesters, I led experimental 
+          labs covering a range of topics including vortex shedding in a water tunnel, drag measurements in a 
+          wind tunnel, convective heat transfer through pin fin arrays, SI engine performance evaluation, and liquid-liquid 
           heat exchanger efficiency. I really enjoy engaging with students and have found that teaching is 
           one of the most effective ways to reinforce my own understanding of engineering principles. 
 
@@ -375,4 +386,4 @@ Error generating stack: `+i.message+`
           helped strengthen my conceptual understanding of fluids and my hands-on machining skills 
           on the lathe and mill.
 
-          `.trim()},{type:"image",src:"projects/TA/FEA 2024S Feedback.png",caption:"Anonymous course feedback for FEA Spring 2024",size:"large"}],categories:["Leadership","Fluid Systems","Computer-Aided Manufacturing","Instrumentation/Electrical"]}],h=[{id:0,title:"Software Engineer",company:"AviaryAI",period:"February 2025 - Present",preview:"Software engineer building AI voice agent tools for financial institutions",description:"Detailed description of the role and responsibilities...",achievements:["AI/ML/Backend engineer for voice agent and knowledge base platforms","YC-backed startup based in NYC"],companyLogo:"/experiences/aviary.png"},{id:1,title:"Machine Learning Engineer Intern",company:"Accenture Federal Services (AFS)",period:"May 2022 - August 2022",preview:"Member of AFS's Machine Learning Research Division",description:"Detailed description of the role and responsibilities...",achievements:["Conducted research on the application and adaptation of emerging AI technologies for federal services","Implemented CLIP-GEN to synthesize images to improve hotel classification in human trafficking photographs","Used AWS EC2 for scalable data preprocessing and distributed multi-GPU training to reduce model training time","Fine-tuned CLIP to learn latent state representations of hotel picture and location pairs using HuggingFace, resulting in 98% accuracy classifying hotel chains and the generation of basic synthetic images"],companyLogo:"/experiences/afs-logo.jpg"},{id:2,title:"VISE Researcher",company:"BEAM Lab, Vanderbilt University",period:"May 2021 - May 2022",preview:"Researcher in Biomedical Elasticity and Acoustic Measurement Lab",description:"Detailed description of the role and responsibilities...",achievements:["Implemented a backend system and GUI to facilitate live ultrasound placement on patients","Engineered an acoustic window detection algorithm using MATLAB, MEX, and CUDA (C) for efficient real-time ultrasound analysis on beamformed data","Improved ultrasound image quality with UNET, achieving 15% average SNR gains on phantom RF data"],companyLogo:"/experiences/vise-logo.png",projectLinks:[{id:9,label:"More Details on BEAM Lab Research"}]}],f=o.length>0?v.filter(g=>g.categories.some(y=>o.includes(y))):v;return e?p.jsx(dh,{project:v.find(g=>g.id===e),onBack:()=>{t(null),s("projects")}}):n?p.jsx(fh,{experience:h.find(g=>g.id===n),onBack:()=>r(null)}):p.jsx("div",{className:"min-h-screen bg-gradient-to-br from-gray-50 to-blue-50",children:p.jsxs("div",{className:"p-8",children:[p.jsxs("header",{className:"max-w-4xl mx-auto mb-8 flex justify-between items-start",children:[p.jsxs("div",{children:[p.jsx("h1",{className:"text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text",children:"Andrew Noonan"}),p.jsx("p",{className:"text-gray-600 mb-4",children:"M.S. Mechanical Engineering"}),p.jsxs("div",{className:"flex gap-4",children:[p.jsx("a",{href:"mailto:andrew.p.noonan@vanderbilt.edu",className:"text-gray-600 hover:text-blue-600 transition-colors",children:p.jsx(ch,{className:"h-5 w-5"})}),p.jsx("a",{href:"https://www.linkedin.com/in/andrew-noonan-413227202/",className:"text-gray-600 hover:text-blue-600 transition-colors",children:p.jsx(uh,{className:"h-5 w-5"})})]})]}),p.jsx("img",{src:"profile/hs.png",alt:"Profile",className:"rounded-full w-32 h-32 border-4 border-white shadow-lg object-cover flex-shrink-0"})]}),p.jsx("main",{className:"max-w-4xl mx-auto",children:p.jsxs(ih,{defaultValue:l,className:"w-full space-y-4",children:[p.jsx("div",{className:"w-full border-b",children:p.jsxs(fd,{className:"h-auto flex flex-wrap bg-muted p-1",children:[p.jsx($n,{value:"about",className:"flex-1 min-w-[120px]",children:"About"}),p.jsx($n,{value:"projects",className:"flex-1 min-w-[120px]",children:"Projects/Experience"}),p.jsx($n,{value:"resume",className:"flex-1 min-w-[120px]",children:"Resume"}),p.jsx($n,{value:"thesis",className:"flex-1 min-w-[120px]",children:"Thesis"})]})}),p.jsx(It,{value:"about",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsx("h2",{className:"text-2xl font-semibold mb-4",children:"About Me"}),p.jsx("div",{className:"grid gap-8",children:u.map((g,y)=>{if(g.type==="paragraph")return p.jsx("p",{className:"text-gray-600 leading-relaxed",children:g.text},y);if(g.type==="image-row")return p.jsx("div",{className:"grid grid-cols-1 sm:grid-cols-3 gap-6",children:g.images.map((w,E)=>p.jsxs("div",{className:"flex flex-col items-center",children:[p.jsx("div",{className:"w-full min-h-[200px] sm:min-h-[150px]",children:p.jsx("img",{src:w.src,alt:w.caption||`Image ${E+1}`,className:"rounded-lg shadow-md w-full h-full object-cover"})}),w.caption&&p.jsx("p",{className:"text-sm text-gray-500 italic mt-2 text-center",children:w.caption})]},E))},y)})})]})})}),p.jsx(It,{value:"experience",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsx("h2",{className:"text-2xl font-semibold mb-4",children:"Work Experience"}),p.jsx("div",{className:"grid gap-4",children:h.map(g=>p.jsx("div",{className:"text-left border p-4 rounded-lg hover:shadow-md transition-all duration-300",children:p.jsxs("div",{className:"flex justify-between items-start",children:[p.jsxs("div",{className:"flex-grow",children:[p.jsx("h3",{className:"font-semibold",children:g.title}),p.jsxs("p",{className:"text-sm text-gray-500",children:[g.company," • ",g.period]}),p.jsx("p",{className:"mt-2 text-gray-600",children:g.preview}),g.achievements&&p.jsx("ul",{className:"mt-2 list-disc list-inside text-gray-600",children:g.achievements.map((y,w)=>p.jsx("li",{children:y},w))}),g.projectLinks&&g.projectLinks.length>0&&p.jsx("div",{className:"mt-4",children:p.jsx("div",{className:"flex flex-wrap gap-2",children:g.projectLinks.map(y=>p.jsxs("button",{onClick:()=>t(y.id),className:"inline-flex items-center px-3 py-1 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-600 text-sm transition-colors",children:[p.jsx("span",{className:"mr-1",children:"→"})," ",y.label,y.tags&&y.tags.map(w=>p.jsx("span",{className:"ml-1 text-xs bg-blue-100 px-2 py-0.5 rounded-full",children:w},w))]},y.id))})})]}),g.companyLogo&&p.jsx("img",{src:g.companyLogo,alt:`${g.company} logo`,className:"w-16 h-16 object-contain ml-4"})]})},g.id))})]})})}),p.jsx(It,{value:"projects",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsxs("div",{className:"flex justify-between items-center mb-6",children:[p.jsx("h2",{className:"text-2xl font-semibold",children:"Projects and Experience"}),p.jsxs("div",{className:"flex items-center gap-2 text-sm text-emerald-600",children:[p.jsx("span",{className:"w-2 h-2 bg-emerald-500 rounded-full animate-pulse"}),"Active"]})]}),p.jsxs("div",{className:"mb-6",children:[p.jsx("div",{className:"text-sm text-gray-600 mb-2",children:"Filter by category:"}),p.jsx("div",{className:"flex flex-wrap gap-2",children:a.map(g=>p.jsx("button",{onClick:()=>{i(y=>y.includes(g)?y.filter(w=>w!==g):[...y,g])},className:`px-3 py-1 rounded-full text-sm transition-colors ${o.includes(g)?"bg-blue-600 text-white":"bg-gray-100 text-gray-600 hover:bg-gray-200"}`,children:g},g))})]}),p.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:f.map(g=>p.jsxs("button",{onClick:()=>t(g.id),className:"group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200 text-left",children:[p.jsxs("div",{className:"aspect-video w-full bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden",children:[g.previewImage?p.jsx("img",{src:g.previewImage,alt:g.title,className:"w-full h-full object-cover"}):p.jsxs("div",{className:"absolute inset-0 flex items-center justify-center",children:[g.categories[0]==="Machine Learning"&&p.jsx("div",{className:"text-3xl opacity-30",children:"🤖"}),g.categories[0]==="Mixed Reality"&&p.jsx("div",{className:"text-3xl opacity-30",children:"🥽"}),g.categories[0]==="LLMs"&&p.jsx("div",{className:"text-3xl opacity-30",children:"💬"})]}),g.ongoing&&p.jsx("div",{className:"absolute top-2 right-2 bg-emerald-500 text-white text-xs px-2 py-1 rounded-full",children:"Active"})]}),p.jsxs("div",{className:"p-4",children:[p.jsxs("div",{className:"flex justify-between items-start mb-2",children:[p.jsx("h3",{className:"font-semibold text-lg group-hover:text-blue-600 transition-colors",children:g.title}),g.github&&p.jsx("a",{href:g.github,className:"text-gray-400 hover:text-gray-600",onClick:y=>y.stopPropagation(),children:p.jsx(md,{className:"h-5 w-5"})})]}),p.jsx("p",{className:"text-gray-600 text-sm mb-3 line-clamp-2",children:g.preview}),p.jsx("div",{className:"flex flex-wrap gap-1",children:g.categories.map(y=>p.jsx("span",{className:"px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full text-xs",children:y},y))})]}),p.jsx("div",{className:"absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity"})]},g.id))})]})})}),p.jsx(It,{value:"resume",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsxs("div",{className:"flex justify-between items-center mb-6",children:[p.jsx("div",{children:p.jsx("h2",{className:"text-2xl font-semibold",children:"Resume"})}),p.jsxs("a",{href:"resume/Andrew Noonan Resume.pdf",download:!0,className:"inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors",children:[p.jsx("svg",{className:"w-4 h-4 mr-2",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:p.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"})}),"Download PDF"]})]}),p.jsx("div",{className:"border rounded-lg overflow-hidden bg-gray-50",children:p.jsx("iframe",{src:"resume/Andrew Noonan Resume.pdf",className:"w-full h-[800px]",title:"Resume Preview"})})]})})}),p.jsx(It,{value:"thesis",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsxs("div",{className:"flex justify-between items-center mb-6",children:[p.jsxs("div",{children:[p.jsx("h2",{className:"text-2xl font-semibold",children:"Thesis"}),p.jsx("h5",{className:"text-sm text-red-500 underline underline-red-600 pt-2",children:"Not final yet"})," "]}),p.jsxs("a",{href:"projects\\venturi\\Noonan Masters Thesis Draft 6_5_25.pdf",download:!0,className:"inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors",children:[p.jsx("svg",{className:"w-4 h-4 mr-2",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:p.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"})}),"Download PDF"]})]}),p.jsx("div",{className:"border rounded-lg overflow-hidden bg-gray-50",children:p.jsx("iframe",{src:"projects\\venturi\\Noonan Masters Thesis Draft 6_5_25.pdf",className:"w-full h-[800px]",title:"Thesis Preview"})})]})})}),p.jsx(It,{value:"blog",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsx("h2",{className:"text-2xl font-semibold mb-4",children:"Blog Posts"}),p.jsx("div",{className:"grid gap-4",children:p.jsxs("div",{className:"border p-4 rounded-lg hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-blue-200",children:[p.jsx("h3",{className:"font-semibold",children:"Coming Soon"}),p.jsx("p",{className:"text-sm text-gray-500"}),p.jsx("p",{className:"text-gray-600"})]})})]})})})]})})]})})}vi.createRoot(document.getElementById("root")).render(p.jsx(He.StrictMode,{children:p.jsx(ph,{})}));
+          `.trim()},{type:"image",src:"projects/TA/FEA 2024S Feedback.png",caption:"Anonymous course feedback for FEA Spring 2024",size:"large"}],categories:["Leadership","Fluid Systems","Computer-Aided Manufacturing","Instrumentation/Electrical"]}],h=[{id:0,title:"Software Engineer",company:"AviaryAI",period:"February 2025 - Present",preview:"Software engineer building AI voice agent tools for financial institutions",description:"Detailed description of the role and responsibilities...",achievements:["AI/ML/Backend engineer for voice agent and knowledge base platforms","YC-backed startup based in NYC"],companyLogo:"/experiences/aviary.png"},{id:1,title:"Machine Learning Engineer Intern",company:"Accenture Federal Services (AFS)",period:"May 2022 - August 2022",preview:"Member of AFS's Machine Learning Research Division",description:"Detailed description of the role and responsibilities...",achievements:["Conducted research on the application and adaptation of emerging AI technologies for federal services","Implemented CLIP-GEN to synthesize images to improve hotel classification in human trafficking photographs","Used AWS EC2 for scalable data preprocessing and distributed multi-GPU training to reduce model training time","Fine-tuned CLIP to learn latent state representations of hotel picture and location pairs using HuggingFace, resulting in 98% accuracy classifying hotel chains and the generation of basic synthetic images"],companyLogo:"/experiences/afs-logo.jpg"},{id:2,title:"VISE Researcher",company:"BEAM Lab, Vanderbilt University",period:"May 2021 - May 2022",preview:"Researcher in Biomedical Elasticity and Acoustic Measurement Lab",description:"Detailed description of the role and responsibilities...",achievements:["Implemented a backend system and GUI to facilitate live ultrasound placement on patients","Engineered an acoustic window detection algorithm using MATLAB, MEX, and CUDA (C) for efficient real-time ultrasound analysis on beamformed data","Improved ultrasound image quality with UNET, achieving 15% average SNR gains on phantom RF data"],companyLogo:"/experiences/vise-logo.png",projectLinks:[{id:9,label:"More Details on BEAM Lab Research"}]}],f=o.length>0?v.filter(g=>g.categories.some(y=>o.includes(y))):v;return e?p.jsx(dh,{project:v.find(g=>g.id===e),onBack:()=>{t(null),s("projects")}}):n?p.jsx(fh,{experience:h.find(g=>g.id===n),onBack:()=>r(null)}):p.jsx("div",{className:"min-h-screen bg-gradient-to-br from-gray-50 to-blue-50",children:p.jsxs("div",{className:"p-8",children:[p.jsxs("header",{className:"max-w-4xl mx-auto mb-8 flex justify-between items-start",children:[p.jsxs("div",{children:[p.jsx("h1",{className:"text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text",children:"Andrew Noonan"}),p.jsx("p",{className:"text-gray-600 mb-4",children:"M.S. Mechanical Engineering"}),p.jsxs("div",{className:"flex gap-4",children:[p.jsx("a",{href:"mailto:andrew.p.noonan@vanderbilt.edu",className:"text-gray-600 hover:text-blue-600 transition-colors",children:p.jsx(ch,{className:"h-5 w-5"})}),p.jsx("a",{href:"https://www.linkedin.com/in/andrew-noonan-413227202/",className:"text-gray-600 hover:text-blue-600 transition-colors",children:p.jsx(uh,{className:"h-5 w-5"})})]})]}),p.jsx("img",{src:"profile/hs.png",alt:"Profile",className:"rounded-full w-32 h-32 border-4 border-white shadow-lg object-cover flex-shrink-0"})]}),p.jsx("main",{className:"max-w-4xl mx-auto",children:p.jsxs(ih,{defaultValue:l,className:"w-full space-y-4",children:[p.jsx("div",{className:"w-full border-b",children:p.jsxs(fd,{className:"h-auto flex flex-wrap bg-muted p-1",children:[p.jsx($n,{value:"about",className:"flex-1 min-w-[120px]",children:"About"}),p.jsx($n,{value:"projects",className:"flex-1 min-w-[120px]",children:"Projects/Experience"}),p.jsx($n,{value:"resume",className:"flex-1 min-w-[120px]",children:"Resume"}),p.jsx($n,{value:"thesis",className:"flex-1 min-w-[120px]",children:"Thesis"})]})}),p.jsx(It,{value:"about",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsx("h2",{className:"text-2xl font-semibold mb-4",children:"About Me"}),p.jsx("div",{className:"grid gap-8",children:u.map((g,y)=>{if(g.type==="paragraph")return p.jsx("p",{className:"text-gray-600 leading-relaxed",children:g.text},y);if(g.type==="image-row")return p.jsx("div",{className:"grid grid-cols-1 sm:grid-cols-3 gap-6",children:g.images.map((w,E)=>p.jsxs("div",{className:"flex flex-col items-center",children:[p.jsx("div",{className:"w-full min-h-[200px] sm:min-h-[150px]",children:p.jsx("img",{src:w.src,alt:w.caption||`Image ${E+1}`,className:"rounded-lg shadow-md w-full h-full object-cover"})}),w.caption&&p.jsx("p",{className:"text-sm text-gray-500 italic mt-2 text-center",children:w.caption})]},E))},y)})})]})})}),p.jsx(It,{value:"experience",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsx("h2",{className:"text-2xl font-semibold mb-4",children:"Work Experience"}),p.jsx("div",{className:"grid gap-4",children:h.map(g=>p.jsx("div",{className:"text-left border p-4 rounded-lg hover:shadow-md transition-all duration-300",children:p.jsxs("div",{className:"flex justify-between items-start",children:[p.jsxs("div",{className:"flex-grow",children:[p.jsx("h3",{className:"font-semibold",children:g.title}),p.jsxs("p",{className:"text-sm text-gray-500",children:[g.company," • ",g.period]}),p.jsx("p",{className:"mt-2 text-gray-600",children:g.preview}),g.achievements&&p.jsx("ul",{className:"mt-2 list-disc list-inside text-gray-600",children:g.achievements.map((y,w)=>p.jsx("li",{children:y},w))}),g.projectLinks&&g.projectLinks.length>0&&p.jsx("div",{className:"mt-4",children:p.jsx("div",{className:"flex flex-wrap gap-2",children:g.projectLinks.map(y=>p.jsxs("button",{onClick:()=>t(y.id),className:"inline-flex items-center px-3 py-1 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-600 text-sm transition-colors",children:[p.jsx("span",{className:"mr-1",children:"→"})," ",y.label,y.tags&&y.tags.map(w=>p.jsx("span",{className:"ml-1 text-xs bg-blue-100 px-2 py-0.5 rounded-full",children:w},w))]},y.id))})})]}),g.companyLogo&&p.jsx("img",{src:g.companyLogo,alt:`${g.company} logo`,className:"w-16 h-16 object-contain ml-4"})]})},g.id))})]})})}),p.jsx(It,{value:"projects",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsxs("div",{className:"flex justify-between items-center mb-6",children:[p.jsx("h2",{className:"text-2xl font-semibold",children:"Projects and Experience"}),p.jsxs("div",{className:"flex items-center gap-2 text-sm text-emerald-600",children:[p.jsx("span",{className:"w-2 h-2 bg-emerald-500 rounded-full animate-pulse"}),"Active"]})]}),p.jsxs("div",{className:"mb-6",children:[p.jsx("div",{className:"text-sm text-gray-600 mb-2",children:"Filter by category:"}),p.jsx("div",{className:"flex flex-wrap gap-2",children:a.map(g=>p.jsx("button",{onClick:()=>{i(y=>y.includes(g)?y.filter(w=>w!==g):[...y,g])},className:`px-3 py-1 rounded-full text-sm transition-colors ${o.includes(g)?"bg-blue-600 text-white":"bg-gray-100 text-gray-600 hover:bg-gray-200"}`,children:g},g))})]}),p.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-6",children:f.map(g=>p.jsxs("button",{onClick:()=>t(g.id),className:"group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-200 text-left",children:[p.jsxs("div",{className:"aspect-video w-full bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden",children:[g.previewImage?p.jsx("img",{src:g.previewImage,alt:g.title,className:"w-full h-full object-cover"}):p.jsxs("div",{className:"absolute inset-0 flex items-center justify-center",children:[g.categories[0]==="Machine Learning"&&p.jsx("div",{className:"text-3xl opacity-30",children:"🤖"}),g.categories[0]==="Mixed Reality"&&p.jsx("div",{className:"text-3xl opacity-30",children:"🥽"}),g.categories[0]==="LLMs"&&p.jsx("div",{className:"text-3xl opacity-30",children:"💬"})]}),g.ongoing&&p.jsx("div",{className:"absolute top-2 right-2 bg-emerald-500 text-white text-xs px-2 py-1 rounded-full",children:"Active"})]}),p.jsxs("div",{className:"p-4",children:[p.jsxs("div",{className:"flex justify-between items-start mb-2",children:[p.jsx("h3",{className:"font-semibold text-lg group-hover:text-blue-600 transition-colors",children:g.title}),g.github&&p.jsx("a",{href:g.github,className:"text-gray-400 hover:text-gray-600",onClick:y=>y.stopPropagation(),children:p.jsx(md,{className:"h-5 w-5"})})]}),p.jsx("p",{className:"text-gray-600 text-sm mb-3 line-clamp-2",children:g.preview}),p.jsx("div",{className:"flex flex-wrap gap-1",children:g.categories.map(y=>p.jsx("span",{className:"px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full text-xs",children:y},y))})]}),p.jsx("div",{className:"absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity"})]},g.id))})]})})}),p.jsx(It,{value:"resume",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsxs("div",{className:"flex justify-between items-center mb-6",children:[p.jsx("div",{children:p.jsx("h2",{className:"text-2xl font-semibold",children:"Resume"})}),p.jsxs("a",{href:"resume/Andrew Noonan Resume.pdf",download:!0,className:"inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors",children:[p.jsx("svg",{className:"w-4 h-4 mr-2",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:p.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"})}),"Download PDF"]})]}),p.jsx("div",{className:"border rounded-lg overflow-hidden bg-gray-50",children:p.jsx("iframe",{src:"resume/Andrew Noonan Resume.pdf",className:"w-full h-[800px]",title:"Resume Preview"})})]})})}),p.jsx(It,{value:"thesis",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsxs("div",{className:"flex justify-between items-center mb-6",children:[p.jsxs("div",{children:[p.jsx("h2",{className:"text-2xl font-semibold",children:"Thesis"}),p.jsx("h5",{className:"text-sm text-red-500 underline underline-red-600 pt-2",children:"Not finalized"})," "]}),p.jsxs("a",{href:"projects\\venturi\\Noonan Masters Thesis Draft 6_5_25.pdf",download:!0,className:"inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors",children:[p.jsx("svg",{className:"w-4 h-4 mr-2",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:p.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"})}),"Download PDF"]})]}),p.jsx("div",{className:"border rounded-lg overflow-hidden bg-gray-50",children:p.jsx("iframe",{src:"projects\\venturi\\Noonan Masters Thesis Draft 6_5_25.pdf",className:"w-full h-[800px]",title:"Thesis Preview"})})]})})}),p.jsx(It,{value:"blog",children:p.jsx(Rt,{children:p.jsxs(Mt,{className:"pt-6",children:[p.jsx("h2",{className:"text-2xl font-semibold mb-4",children:"Blog Posts"}),p.jsx("div",{className:"grid gap-4",children:p.jsxs("div",{className:"border p-4 rounded-lg hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-blue-200",children:[p.jsx("h3",{className:"font-semibold",children:"Coming Soon"}),p.jsx("p",{className:"text-sm text-gray-500"}),p.jsx("p",{className:"text-gray-600"})]})})]})})})]})})]})})}vi.createRoot(document.getElementById("root")).render(p.jsx(He.StrictMode,{children:p.jsx(ph,{})}));
