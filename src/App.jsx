@@ -140,7 +140,7 @@ function App() {
       type: "paragraph",
       text:  `
       
-      I'm currently working as a research assistant with my BE (May 2023) and MS (June 2025) in Mechanical 
+      I'm currently working as a research assistant with a BE (May 2023) and MS (June 2025) in Mechanical 
       Engineering from Vanderbilt University. My research projects have spanned experimental fluid 
       mechanics, diesel engine lubricant measurement, structural health monitoring of composite materials, and aerospace engineering. 
       I'm extremely grateful for these incredible opportunities to build my strengths in fluid systems 
