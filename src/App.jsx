@@ -141,7 +141,8 @@ function App() {
       text:  `
       
       I'm currently working as a research assistant with a BE (May 2023) and MS (June 2025) in Mechanical 
-      Engineering from Vanderbilt University. My research projects have spanned experimental fluid 
+      Engineering from Vanderbilt University. I am a mission-driven individual looking for high-impact roles to 
+      apply my fluids and test background to contribute an R&D, test, or design team. My research projects have spanned experimental fluid 
       mechanics, diesel engine lubricant measurement, structural health monitoring of composite materials, and aerospace engineering. 
       I'm extremely grateful for these incredible opportunities to build my strengths in fluid systems 
       design, hardware design, data-driven analysis, manufacturing, and instrumentation.
