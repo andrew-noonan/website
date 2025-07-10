@@ -1515,7 +1515,7 @@ function App() {
                       <h5 className="text-sm text-red-500 underline underline-red-600 pt-2" >Not finalized</h5> </div>
                         
                         <a 
-                        href="projects\venturi\Noonan Masters Thesis Draft 6_5_25.pdf"
+                        href="projects\venturi\Andrew_Noonan_Masters_Thesis.pdf"
                         download
                         className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                         >
@@ -1537,7 +1537,7 @@ function App() {
                     </div>
                     <div className="border rounded-lg overflow-hidden bg-gray-50">
                         <iframe
-                        src="projects\venturi\Noonan Masters Thesis Draft 6_5_25.pdf"
+                        src="projects\venturi\Andrew_Noonan_Masters_Thesis.pdf"
                         className="w-full h-[800px]"
                         title="Thesis Preview"
                         />
