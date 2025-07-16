@@ -579,7 +579,7 @@ function App() {
     {
       id: 3,
       title: "Active Apogee Control",
-      preview: "Contrastive learning for surgical skill assessment using surgical videos and robot kinematics",
+      preview: "Novel air brake system utilizing external airfoils",
       previewImage: "projects/AAC/AACOnboard.gif",
       ongoing: false,
       //github: "https://github.com/nshehadeh/contrastive-gesture-skill",
